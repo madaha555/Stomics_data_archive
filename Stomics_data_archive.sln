@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Stomics_quality_check", "Stomics_quality_check\Stomics_quality_check.pyproj", "{EBA988FF-5460-4DC1-ABA7-DC316ED5D104}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBA988FF-5460-4DC1-ABA7-DC316ED5D104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA988FF-5460-4DC1-ABA7-DC316ED5D104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85EE7097-FC64-404A-B8B3-85ECBDD215B7}
+	EndGlobalSection
+EndGlobal

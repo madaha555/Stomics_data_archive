@@ -1,0 +1,48 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>eba988ff-5460-4dc1-aba7-dc316ed5d104</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Stomics_quality_check.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Stomics_quality_check</Name>
+    <RootNamespace>Stomics_quality_check</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\Desktop\2023_09\质量控制\QC_V3_S1_prepare_json.py">
+      <Link>QC_V3_S1_prepare_json.py</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Desktop\2023_09\质量控制\QC_V5_S2_quality_check.py">
+      <Link>QC_V5_S2_quality_check.py</Link>
+    </Compile>
+    <Compile Include="Stomics_quality_check.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test_data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="test_data\4.STOmics.Stereo-seq.V1.1.xlsx" />
+    <Content Include="test_data\5.STOmics.Other.V1.0.xlsx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
